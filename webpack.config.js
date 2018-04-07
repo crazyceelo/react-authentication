@@ -1,4 +1,4 @@
-import path from 'path';
+const path = require('path');
 
 module.exports = {
   // the entry file for the bundle
@@ -10,19 +10,21 @@ module.exports = {
     filename: 'app.js',
   },
 
-  module: {
-    // apply loaders to files that meet given conditions
-    loaders: [{
-      test: /\.jsx?$/,
-      include: path.join(__dirname, '/client/src'),
-      loader: 'babel',
-      query: {
-        presets: ['react', 'es2015']
-      }
-    }],
-  },
+  mode: 'development'
+
+  // module: {
+  //   // apply loaders to files that meet given conditions
+  //   loaders: [{
+  //     test: /\.jsx?$/,
+  //     include: path.join(__dirname, '/client/src'),
+  //     loader: 'babel',
+  //     query: {
+  //       presets: ['react', 'es2015']
+  //     }
+  //   }],
+  // },
 
   // start webpack in a watch mode, so webpack
   // will rebuild the bundle on changes
-  watch: true
+  // watch: true
 }
