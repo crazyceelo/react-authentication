@@ -10,8 +10,20 @@ module.exports = {
     filename: 'app.js',
   },
 
-  mode: 'development'
+  mode: 'development',
 
+  module: {
+    rules: [
+      {
+        test: /.jsx?$/,
+        loader: 'babel-loader',
+        exclude: /node_modules/,
+        query: {
+          presets: ['es2015', 'react']
+        }
+      }
+    ]
+  },
   // module: {
   //   // apply loaders to files that meet given conditions
   //   loaders: [{
