@@ -5,6 +5,7 @@ import RaisedButton from 'material-ui/RadioButton';
 import TextField from 'material-ui/TextField';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
+// this might need a return?
 const SignUpForm = ({
   onSubmit,
   onChange,
