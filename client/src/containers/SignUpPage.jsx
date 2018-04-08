@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 import SignUpForm from '../components/SignUpForm.jsx';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+// import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 
 

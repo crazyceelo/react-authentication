@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 import { Link, IndexLink } from 'react-router';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+// import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 
 // this might need a return?
@@ -14,7 +14,7 @@ const Base = ({ children }) => (
 
       <div className="top-bar-right">
         <Link to="/login">Log in</Link>
-        <Link to="signup">Sign up</Link>
+        <Link to="/signup">Sign up</Link>
       </div>
     </div>
 
@@ -22,7 +22,9 @@ const Base = ({ children }) => (
     The children object will be passed as a prop
     by a router that we will configure later  
     */}
+
     {children}
+
   </div>
 );
 

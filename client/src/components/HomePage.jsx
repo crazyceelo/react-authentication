@@ -1,14 +1,14 @@
 import React from 'react';
 import { Card, CardTitle } from 'material-ui/Card';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+// import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 const HomePage = () => {
   return (
-    <MuiThemeProvider>
+    // <MuiThemeProvider>
       <Card className="container">
         <CardTitle title="React Application" subtitle="This is the home page."/>
       </Card>
-    </MuiThemeProvider>  
+    // </MuiThemeProvider>  
   )
 }
 
