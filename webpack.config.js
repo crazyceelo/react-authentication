@@ -15,9 +15,9 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /.jsx?$/,
+        test: /\.jsx?$/,
+        include: path.join(__dirname, '/client/src'),
         loader: 'babel-loader',
-        exclude: /node_modules/,
         query: {
           presets: ['es2015', 'react']
         }
