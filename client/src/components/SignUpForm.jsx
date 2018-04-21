@@ -52,13 +52,13 @@ const SignUpForm = ({
         <RaisedButton type="submit" label="Create New Account" primary />
       </div>
 
-      <CardText>Already have an account? <Link to={'/login'}>Log in</Link></CardText>
+      <CardText>Already have an account? <Link to={'/signup'}>Log in</Link></CardText>
     </form>
   </Card>
 );
 
 SignUpForm.propTypes = {
-  // onSubmit: PropTypes.func.isRequired,
+  onSubmit: PropTypes
   // onChange: PropTypes.func.isRequired,
   // errors: PropTypes.object.isRequired,
   // user: PropTypes.object.isRequired
